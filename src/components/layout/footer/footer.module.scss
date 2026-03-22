@@ -1,0 +1,65 @@
+@use "@/styles/tokens/colors";
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: colors.$color-footer;
+
+    .footer__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        padding-top: 34px;
+
+        a {
+            padding: 10px;
+            border-radius: 100%;
+            background-color: colors.$color-primary;
+            color: colors.$color-white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+
+            &:hover {
+                background-color: colors.$color-secondary-hover;
+            }
+        }
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 34px;
+
+        span {
+            color: colors.$color-white;
+            font-size: 16px;
+
+            a {
+                color: colors.$color-white;
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: colors.$color-white;
+            font-size: 16px;
+
+            a {
+                color: colors.$color-white;
+                text-decoration: underline;
+            }
+        }
+    }
+}
