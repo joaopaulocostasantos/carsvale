@@ -1,0 +1,13 @@
+@use "./tokens/colors";
+@use "./tokens/typography";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: typography.$font-base;
+    background-color: colors.$color-bg-primary;
+}

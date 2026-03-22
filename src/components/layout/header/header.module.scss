@@ -1,0 +1,73 @@
+@use '@/styles/tokens/colors' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: $color-primary;
+    font-size: 16px;
+}
+
+.nav {
+    width: 100%; 
+    max-width: 1200px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav__links {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+                list-style: none;
+
+                a {
+                    
+                    color: $color-white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 99px;
+
+                    &:hover {
+                        background-color: $color-secondary;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .nav__actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 10px 0px 10px 0px;
+            width: 180px;
+            border-radius: 99px;
+            cursor: pointer;
+            background-color: $color-secondary;
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: $color-secondary-hover;
+            }
+        }
+    }
+}
+
