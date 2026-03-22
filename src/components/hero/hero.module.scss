@@ -1,0 +1,115 @@
+@use '@/styles/tokens/colors' as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    background: url("../../assets/hero_img.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero__bagde {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+
+    .hero__bagde__customers {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+
+    .hero__bagde__text   {
+        font-size: 20px;
+        color: $color-white;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.hero__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+    .hero__title {
+        color: $color-white;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    .hero__description {
+        color: $color-gray;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 110%;
+    }
+}
+
+.hero__cta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 68px;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 80px;
+        border-radius: 999px;
+        border: none;
+        background-color: $color-secondary;
+        color: $color-white;
+        font-size: 24px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        a {
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        .hero__cta__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            border-radius: 100%;
+            background-color: $color-white;
+            color: $color-primary;
+            font-size: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            .hero__cta__icon__arrow {
+                transform: rotate(-45deg);
+            }
+        }
+
+        &:hover {
+            background-color: $color-secondary-hover;
+        }
+    }
+}

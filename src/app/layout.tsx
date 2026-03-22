@@ -5,7 +5,6 @@ import "@/styles/globals.scss";
 // Components
 import { Header } from "@/components/layout/header/header";
 import { Footer } from "@/components/layout/footer/footer";
-import { Container } from "@/components/ui/container/container";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,11 +34,9 @@ export default function RootLayout({
     <html lang="pt-BR" className={inter.variable}>
       <body>
         <Header />
-        <Container>
-          <main>
-            {children}
-          </main>
-        </Container>
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
