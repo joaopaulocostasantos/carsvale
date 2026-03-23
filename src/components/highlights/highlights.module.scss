@@ -1,0 +1,13 @@
+.highlights {
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+    margin-bottom: 80px;
+}
+
+.highlightsCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
