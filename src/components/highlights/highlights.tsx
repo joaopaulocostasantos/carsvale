@@ -2,7 +2,7 @@ import styles from "./highlights.module.scss";
 
 // components
 import { Container } from "../ui/container/container";
-import { HighlightCard } from "./highlight-card/highlight-card";
+import { HighlightCard } from "./highlightCard/highlight-card";
 
 export function Highlights() {
     return (
